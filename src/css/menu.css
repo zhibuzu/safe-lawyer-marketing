@@ -1,0 +1,243 @@
+
+
+.container_menu {
+  *zoom: 1;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 780px;
+  height: 100%;
+	font-size: 16px;
+	z-index: 999999999999;
+}
+.container_menu:before,
+.container_menu:after {
+  content: "";
+  display: table;
+}
+.container_menu:after {
+  clear: both;
+}
+.lt-ie9 {
+  overflow: visible;
+}
+.lt-ie9 body {
+  overflow: visible;
+}
+.lt-ie9 .container_menu {
+  width: 960px;
+}
+.lt-ie8 {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+/* LAYOUT
+====================================== */
+#main {
+  padding-top: 40px;
+}
+.primary-content {
+  float: left;
+  width: 63%;
+}
+.sidebar {
+  float: right;
+  width: 31.25%;
+}
+/* HELPER CLASSES
+====================================== */
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+iframe {
+  max-width: 100%;
+}
+.pattern {
+  /* background-image: url(../images/pattern.png);
+  background-position: 0 0;
+  background-repeat: repeat; */
+}
+.center {
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .container_menu {
+    padding: 0 10px;
+  }
+  /* LAYOUT
+	====================================== */
+  .primary-content,
+  .sidebar {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+  }
+}
+/* All */
+.nav {
+  margin-bottom: 0px;
+}
+.nav ul {
+  *zoom: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul:before,
+.nav ul:after {
+  content: "";
+  display: table;
+}
+.nav ul:after {
+  clear: both;
+}
+.nav ul > li {
+  float: left;
+  position: relative;
+}
+.col ul{
+	margin-top:60px;
+}
+.col > ul > li > a {
+  display: block;
+  padding: 10px 20px;
+  line-height: 1.5em;
+  color: #fff;
+  border-left: 1px solid #595959;
+}
+.nav > ul > li > a {
+  display: block;
+  padding: 0px 20px;
+  line-height: 90px;
+  color: #333;
+	transition: 0.4s;
+}
+.nav a:after{
+	content: "";
+    background-color: #004b8f;
+    position: absolute;
+	text-decoration: none;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    z-index: -1;
+    transition: 0.3s;
+}
+.nav a:hover{
+	color:#fff;
+}
+.nav a:hover:after{
+	right: 0;
+	left: 0;
+}
+.nav li ul {
+		background:rgba(39, 55, 84, 0.5) none repeat scroll 0 0 !important;
+
+}
+.nav li ul li {
+  width: 200px;
+}
+.nav li ul a {
+  border: none;
+}
+.nav li ul a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+/* Not Animated
+============================== */
+.nav1 ul > li:hover ul {
+  left: 0;
+}
+.nav1 li ul {
+  position: absolute;
+  left: -9999em;
+  top: 36px;
+  z-index: 1;
+}
+/* Fade In and Out
+============================== */
+.nav2 ul > li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.nav2 li ul {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+}
+/* Slide Down
+============================== */
+.nav3 ul > li:hover ul li {
+  height: 36px;
+}
+.nav3 li ul {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 1;
+}
+.nav3 li ul li {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+}
+/* Slide Down 2
+============================== */
+.nav4 ul > li:hover ul li {
+  max-height: 150px;
+}
+.nav4 li ul {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 1;
+}
+.nav4 li ul li {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 500ms ease;
+  -moz-transition: max-height 500ms ease;
+  -o-transition: max-height 500ms ease;
+  transition: max-height 500ms ease;
+}
+/* Fold Out
+============================== */
+.nav5 ul > li:hover ul {
+  max-height: 1000px;
+  -webkit-transform: perspective(400) rotate3d(0, 0, 0, 0);
+}
+.nav5 li ul {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform-origin: 50% 0;
+  -webkit-transition: 350ms;
+  -moz-transition: 350ms;
+  -o-transition: 350ms;
+  transition: 350ms;
+}
