@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 15:50:32
- * @LastEditTime: 2021-03-07 18:38:56
+ * @LastEditTime: 2021-03-09 08:43:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/webpack.config.js
@@ -37,7 +37,7 @@ module.exports = {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
                 loader: 'file-loader',
                 options: {
-                    outputPath: 'images',
+                    outputPath: 'images-out',
                     name: '[name].[ext]?[hash]'
                 }
             },
