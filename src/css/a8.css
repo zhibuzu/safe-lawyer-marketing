@@ -1795,14 +1795,14 @@ img {
 	position: relative;
 }
 .p_num{
-	width:71px;
-	height: 71px;
+	width:7vw;
+	height: 7vw;
 	border-radius: 50%;
 	background: #edba15;
 		display: flex;
     justify-content: center;
     align-items: center;
-	font-size: 48px;
+	font-size: 20px;
 	font-family: Corki;
 	color: #fff;
 	float: left;
@@ -1858,6 +1858,7 @@ img {
 }
 .jiz_li ul li{
 	width:27%;
+	height: 150px;
 	margin: 40px 1%;
 	float:left;
 	border-radius: 5px;

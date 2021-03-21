@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 16:05:09
- * @LastEditTime: 2021-03-21 16:32:40
+ * @LastEditTime: 2021-03-21 17:33:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/src/main.js
@@ -13,7 +13,7 @@ require('./css/animate.css')
 require('./css/menu.css')
 require('./css/lrtk.css')
 // require('!style-loader!css-loader!./css/mycss.css')
-import myCss from '!style-loader!css-loader!./css/mycss.css'
+// import myCss from '!style-loader!css-loader!./css/mycss.css'
 
 
 require('./js/jquery-1.8.3.min.js')
