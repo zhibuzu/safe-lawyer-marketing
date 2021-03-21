@@ -1,18 +1,23 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-07 14:43:43
- * @LastEditTime: 2021-03-07 18:47:48
+ * @LastEditTime: 2021-03-21 14:40:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/index.html
 -->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title><% htmlWebpackPlugin.options.title %></title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- <meta name="viewport" content="initial-scale=1,minimum-scale=1" /> -->
+<meta name="viewport" content="width=device-width">
+
+<title><%= htmlWebpackPlugin.options.title %></title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="./css/a8.css" rel="stylesheet" type="text/css" />
@@ -21,6 +26,8 @@
 <!--客服-->
 <!--飞入特效-->
 <link rel="stylesheet" href="./css/animate.css">
+<!-- material web component -->
+<link rel="stylesheet" href="./css/material-components-web.min.css">
 <script src="./js/wow.min.js"></script>
 <script>
 new WOW().init();
@@ -31,7 +38,9 @@ new WOW().init();
 <div class="myweb" id="myapp"> 
   
 </div>
-
+<!-- Required Material Web JavaScript library -->
+<script src="./js/material-components-web.min.js"></script>
+<!-- Instantiate single textfield component rendered in the document -->
  <script src="./js/main.js"></script>
 </body>
 </html>

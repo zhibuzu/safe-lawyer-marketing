@@ -1,5 +1,7 @@
 dependencies:
   art-template: 4.13.2
+  i: 0.3.6
+  npm: 7.6.3
   webpack: 5.24.3_webpack-cli@4.5.0
   webpack-cli: 4.5.0_webpack@5.24.3
 devDependencies:
@@ -2065,6 +2067,13 @@ packages:
     resolution:
       integrity: sha1-3JH8ukLk0G5Kuu0zs+ejwC9RTqA=
       tarball: human-signals/download/human-signals-2.1.0.tgz
+  /i/0.3.6:
+    dev: false
+    engines:
+      node: '>=0.4'
+    resolution:
+      integrity: sha1-2WyScyB28HJxG2sQ/X1PZa2O4j0=
+      tarball: i/download/i-0.3.6.tgz
   /icss-utils/5.1.0_postcss@8.2.7:
     dependencies:
       postcss: 8.2.7
@@ -2388,6 +2397,81 @@ packages:
     resolution:
       integrity: sha1-t+zR5e1T2o43pV4cImnguX7XSOo=
       tarball: npm-run-path/download/npm-run-path-4.0.1.tgz
+  /npm/7.6.3:
+    bundledDependencies:
+      - '@npmcli/arborist'
+      - '@npmcli/ci-detect'
+      - '@npmcli/config'
+      - '@npmcli/run-script'
+      - abbrev
+      - ansicolors
+      - ansistyles
+      - archy
+      - byte-size
+      - cacache
+      - chalk
+      - chownr
+      - cli-columns
+      - cli-table3
+      - columnify
+      - glob
+      - graceful-fs
+      - hosted-git-info
+      - ini
+      - init-package-json
+      - is-cidr
+      - json-parse-even-better-errors
+      - leven
+      - libnpmaccess
+      - libnpmdiff
+      - libnpmfund
+      - libnpmhook
+      - libnpmorg
+      - libnpmpack
+      - libnpmpublish
+      - libnpmsearch
+      - libnpmteam
+      - libnpmversion
+      - make-fetch-happen
+      - minipass
+      - minipass-pipeline
+      - mkdirp
+      - mkdirp-infer-owner
+      - ms
+      - node-gyp
+      - nopt
+      - npm-audit-report
+      - npm-package-arg
+      - npm-pick-manifest
+      - npm-profile
+      - npm-registry-fetch
+      - npm-user-validate
+      - npmlog
+      - opener
+      - pacote
+      - parse-conflict-json
+      - qrcode-terminal
+      - read
+      - read-package-json
+      - read-package-json-fast
+      - readdir-scoped-modules
+      - rimraf
+      - semver
+      - ssri
+      - tar
+      - text-table
+      - tiny-relative-date
+      - treeverse
+      - validate-npm-package-name
+      - which
+      - write-file-atomic
+    dev: false
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha1-KcBIuFIvyEavG2b7uM5/NWWEsSE=
+      tarball: npm/download/npm-7.6.3.tgz
   /nth-check/1.0.2:
     dependencies:
       boolbase: 1.0.0
@@ -3238,6 +3322,8 @@ specifiers:
   ejs-compiled-loader: ^3.0.0
   file-loader: ^6.2.0
   html-webpack-plugin: ^5.2.0
+  i: ^0.3.6
+  npm: ^7.6.3
   path-browserify: ^1.0.1
   style-loader: ^2.0.0
   url-loader: ^4.1.1
