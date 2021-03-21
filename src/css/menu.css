@@ -120,6 +120,7 @@ iframe {
   line-height: 90px;
   color: #333;
 	transition: 0.4s;
+  text-align: center;
 }
 .nav a:after{
 	content: "";
