@@ -2,7 +2,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-21 15:29:51
- * @LastEditTime: 2021-03-21 16:34:53
+ * @LastEditTime: 2021-03-21 17:15:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer-marketing/public/index.php
@@ -55,9 +55,13 @@ $input = filter_input_array(INPUT_POST, [
     ]
 ]);
 // var_export($input);exit;
+if (empty($input) || !is_array($input)) {
+    echo json_encode(['code' => 10001, 'msg' => 'params error']);exit; 
+}
+
 foreach ($input as $item) {
     if (is_array($item) && isset($item[0]) && $item[0] === false) {
-        echo json_encode(['code' => 10001, 'msg' => $item[1] ?? 'param error']);exit;
+        echo json_encode(['code' => 10001, 'msg' => $item[1] ?? 'params error']);exit;
     }
 }
 
