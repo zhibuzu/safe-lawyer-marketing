@@ -374,10 +374,11 @@ img {
 .pro_mid02{
 	margin: auto;
 	overflow: hidden;
-	height: 452px;
+	height: 432px;
 	margin-top: 40px;
 	padding: 50px 0 0 0;
-	background: url("../images/pro_bj02.jpg") no-repeat center bottom;
+	background: url("../images/pro_bj02.jpg") no-repeat center -49px;
+	background-size: auto;
 }
 .pro_lil{
 	display:flex;justify-content:center;align-items:center;
@@ -395,7 +396,7 @@ img {
 	float: left;
 }
 .pro_li01{
-	margin-left:80px;
+	margin-left:40px;
 }
 .pro_li02{
 	margin-right: 20px;
@@ -414,7 +415,7 @@ img {
 }
 .pro_lijg01{
 	width:246px;
-	height: 71px;
+	height: 90px;
 	float: left;
 }
 .pro_lijg02{
@@ -1768,7 +1769,8 @@ img {
 }
 .zhuce_li ul li{
 	float: left;
-	margin: 40px 36px;
+	margin: 2%;
+    width: 27%;
 }
 .zhuce_li ul li p{
 	font-size: 18px;
@@ -1796,14 +1798,14 @@ img {
 	position: relative;
 }
 .p_num{
-	width:7vw;
-	height: 7vw;
+	width:5vw;
+	height: 5vw;
 	border-radius: 50%;
 	background: #edba15;
 		display: flex;
     justify-content: center;
     align-items: center;
-	font-size: 20px;
+	font-size: 28px;
 	font-family: Corki;
 	color: #fff;
 	float: left;
@@ -1815,7 +1817,7 @@ img {
 	margin-left: 36px;
 	text-indent: 10px;
 	height: 20px;
-	font-size: 16px;
+	font-size: 20px;
 	color: #333;
 	overflow: hidden;
 }
@@ -1937,7 +1939,10 @@ img {
 .jz_sale_tab table tr td{
 	width:25%;
 	padding: 0 40px;
-	
+}
+.jz_sale_tab table tr td+td{
+	width:75%;
+	padding: 0 40px;
 }
 .td_fis{
 	color: #333;
@@ -1970,7 +1975,7 @@ img {
 
 .signup {
 	width: 100%;
-    background: #e9ebee;
+    background:#fcd558cc;
     padding: 10px 0 10px 0;
     margin-top: 40px;
 }
