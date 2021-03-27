@@ -377,7 +377,7 @@ img {
 	height: 432px;
 	margin-top: 40px;
 	padding: 50px 0 0 0;
-	background: url("../images/pro_bj02-removebg.png") no-repeat center -49px;
+	background: url("../images/pro_bj02-removebg-preview.png") no-repeat center -49px;
 	background-size: 40%;
 }
 .pro_lil{
@@ -1230,7 +1230,7 @@ img {
 .vat_ggt{
 	
 	height: 350px;
-	background: url(../images/vat.jpg) center top no-repeat;
+	background: url(../images/vat.jpeg) center top no-repeat;
 }
 .vat_ggtjy{
 	

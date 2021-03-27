@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 16:05:09
- * @LastEditTime: 2021-03-27 11:33:33
+ * @LastEditTime: 2021-03-27 11:55:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/src/main.js
@@ -43,6 +43,13 @@ mdc.textField.MDCTextField.attachTo(company);
 mdc.textField.MDCTextField.attachTo(message);
 
 
+function clearForm() {
+    username.value = '';
+    mobile.value = '';
+    company.value = '';
+    message.value = '';
+}
+
 // submit signup
 document.querySelector('#signup-button').addEventListener('click', function (event) {
     let username_val = username.querySelector('[name=username]').value;
@@ -69,6 +76,7 @@ document.querySelector('#signup-button').addEventListener('click', function (eve
     })
         .success(function ({ code, msg }) {
             console.log(code, msg);
+            clearForm();
             if (code === 10000) {
                 alert(msg);
                 return;
@@ -76,6 +84,7 @@ document.querySelector('#signup-button').addEventListener('click', function (eve
             alert(msg);
         })
         .fail(function () {
+            // clearForm();
             alert('报名出了点异常，请重试！');
         });
 })
