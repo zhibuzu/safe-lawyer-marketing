@@ -2,7 +2,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-21 15:29:51
- * @LastEditTime: 2021-03-21 17:15:24
+ * @LastEditTime: 2021-03-27 11:38:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer-marketing/public/index.php
@@ -35,6 +35,12 @@ function checkMessage($value) {
     return trim($value);
 }
 
+function checkStartAt($value) {
+    if (trim($value) === '') {
+        return [false, '请选择听课时间'];;
+    }
+    return trim($value);
+}
 
 $input = filter_input_array(INPUT_POST, [
     'username_val' => [
@@ -52,7 +58,11 @@ $input = filter_input_array(INPUT_POST, [
     'message_val' => [
         'filter' => FILTER_CALLBACK,
         'options' => 'checkMessage'
-    ]
+    ],
+    'start_at_val' => [
+        'filter' => FILTER_CALLBACK,
+        'options' => 'checkStartAt'
+    ],
 ]);
 // var_export($input);exit;
 if (empty($input) || !is_array($input)) {
@@ -69,11 +79,12 @@ try {
     // var_export($input);exit;
     $dbh = new PDO("mysql:host=".$db["host"].";port=".$db['port'].";charset=".$db['charset'].";dbname=".$db['dbname'], $db['user'], $db['pass']);
 
-    $stmt = $dbh->prepare("INSERT INTO register_lesson (username, mobile, company, message) VALUES (:username, :mobile, :company, :message)");
+    $stmt = $dbh->prepare("INSERT INTO register_lesson (username, mobile, company, message, start_at) VALUES (:username, :mobile, :company, :message, :start_at)");
     $stmt->bindValue(':username', $input['username_val']);
     $stmt->bindValue(':mobile', $input['mobile_val']);
     $stmt->bindValue(':company', $input['company_val']);
     $stmt->bindValue(':message', $input['message_val']);
+    $stmt->bindValue(':start_at', $input['start_at_val']);
 
     // 插入一行
     $stmt->execute();

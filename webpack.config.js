@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 15:50:32
- * @LastEditTime: 2021-03-09 08:43:47
+ * @LastEditTime: 2021-03-27 11:48:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/webpack.config.js
@@ -10,7 +10,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    mode: 'development',
+    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     entry: {
         main: path.resolve(__dirname, 'src/main.js'),
     },
@@ -48,7 +48,7 @@ module.exports = {
                     options: {
                         htmlmin: true,
                         htmlminOptions: {
-                          removeComments: true
+                            removeComments: true
                         }
                     }
                 }

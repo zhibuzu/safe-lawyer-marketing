@@ -377,8 +377,8 @@ img {
 	height: 432px;
 	margin-top: 40px;
 	padding: 50px 0 0 0;
-	background: url("../images/pro_bj02.jpg") no-repeat center -49px;
-	background-size: auto;
+	background: url("../images/pro_bj02-removebg.png") no-repeat center -49px;
+	background-size: 40%;
 }
 .pro_lil{
 	display:flex;justify-content:center;align-items:center;
@@ -593,11 +593,11 @@ img {
 
 .input-row .mdc-text-field--textarea {
     width: 95%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .input-row {
-    margin: 10px 10px;
+    margin: 10px 10px 15px;
 }
 /*�߿򶯻�Ч��*/
 
@@ -1975,7 +1975,7 @@ img {
 
 .signup {
 	width: 100%;
-    background:#fcd558cc;
+    background:#faf554cc;
     padding: 10px 0 10px 0;
     margin-top: 40px;
 }

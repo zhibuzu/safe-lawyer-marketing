@@ -9,6 +9,7 @@ devDependencies:
   '@babel/preset-env': 7.13.9_@babel+core@7.13.8
   art-template-loader: 1.4.3_art-template@4.13.2
   babel-loader: 8.2.2_69db794c318707266a4dc85e46aa7443
+  cross-env: 7.0.3
   css-loader: 5.1.1_webpack@5.24.3
   ejs-compiled-loader: 3.0.0
   file-loader: 6.2.0_webpack@5.24.3
@@ -1548,12 +1549,23 @@ packages:
     resolution:
       integrity: sha1-Tlcqz+kK/2nXbYw3dZ0hpcWbtFU=
       tarball: core-js-compat/download/core-js-compat-3.9.1.tgz?cache=0&sync_timestamp=1614539789555&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js-compat%2Fdownload%2Fcore-js-compat-3.9.1.tgz
+  /cross-env/7.0.3:
+    dependencies:
+      cross-spawn: 7.0.3
+    dev: true
+    engines:
+      node: '>=10.14'
+      npm: '>=6'
+      yarn: '>=1'
+    hasBin: true
+    resolution:
+      integrity: sha1-hlJkspZ33AFbqEGJGJZd0jL8VM8=
+      tarball: cross-env/download/cross-env-7.0.3.tgz
   /cross-spawn/7.0.3:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-    dev: false
     engines:
       node: '>= 8'
     resolution:
@@ -2143,7 +2155,6 @@ packages:
       integrity: sha1-venDJoDW+uBBKdasnZIc54FfeOM=
       tarball: is-stream/download/is-stream-2.0.0.tgz
   /isexe/2.0.0:
-    dev: false
     resolution:
       integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
       tarball: isexe/download/isexe-2.0.0.tgz
@@ -2586,7 +2597,6 @@ packages:
       integrity: sha1-UTvb4tO5XXdi6METfvoZXGxhtbM=
       tarball: path-exists/download/path-exists-4.0.0.tgz
   /path-key/3.1.1:
-    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -2893,14 +2903,12 @@ packages:
   /shebang-command/2.0.0:
     dependencies:
       shebang-regex: 3.0.0
-    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha1-zNCvT4g1+9wmW4JGGq8MNmY/NOo=
-      tarball: shebang-command/download/shebang-command-2.0.0.tgz
+      tarball: shebang-command/download/shebang-command-2.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fshebang-command%2Fdownload%2Fshebang-command-2.0.0.tgz
   /shebang-regex/3.0.0:
-    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -3281,7 +3289,6 @@ packages:
   /which/2.0.2:
     dependencies:
       isexe: 2.0.0
-    dev: false
     engines:
       node: '>= 8'
     hasBin: true
@@ -3318,6 +3325,7 @@ specifiers:
   art-template: ^4.13.2
   art-template-loader: ^1.4.3
   babel-loader: ^8.2.2
+  cross-env: ^7.0.3
   css-loader: ^5.1.1
   ejs-compiled-loader: ^3.0.0
   file-loader: ^6.2.0
