@@ -377,7 +377,8 @@ img {
 	height: 432px;
 	margin-top: 40px;
 	padding: 50px 0 0 0;
-	background: url("../images/pro_bj02-removebg-preview.png") no-repeat center -49px;
+	/* background: url("../images/pro_bj02-removebg-preview.png") no-repeat center -49px; */
+	background: url("https://tva1.sinaimg.cn/large/008eGmZEly1goydg4spsfj30jc0r4tdv.jpg") no-repeat center -49px;
 	background-size: 40%;
 }
 .pro_lil{
@@ -1080,7 +1081,8 @@ img {
 .wx_sm{
 	width:113px;
 	height: 113px;
-	background: url("../images/foot_weixin.jpg") no-repeat;
+	/* background: url("../images/foot_weixin.jpg") no-repeat; */
+	background: url("https://tva1.sinaimg.cn/large/008eGmZEly1goydgpqqdpj30by0by752.jpg") no-repeat;
 	background-size: cover;
 }
 .foot_top2{
@@ -1230,7 +1232,8 @@ img {
 .vat_ggt{
 	
 	height: 350px;
-	background: url(../images/vat.jpeg) center top no-repeat;
+	/* background: url(../images/vat.jpeg) center top no-repeat; */
+	background: url(https://tva1.sinaimg.cn/large/008eGmZEly1goydgjrrl6j31hc07xdj5.jpg) center top no-repeat;
 }
 .vat_ggtjy{
 	
