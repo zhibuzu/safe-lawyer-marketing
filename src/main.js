@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 16:05:09
- * @LastEditTime: 2021-03-27 11:55:41
+ * @LastEditTime: 2021-03-27 12:46:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/src/main.js
@@ -37,10 +37,10 @@ let company = document.querySelector('#company');
 let message = document.querySelector('#message');
 let form = document.getElementById('form-fields');
 
-mdc.textField.MDCTextField.attachTo(username);
-mdc.textField.MDCTextField.attachTo(mobile);
-mdc.textField.MDCTextField.attachTo(company);
-mdc.textField.MDCTextField.attachTo(message);
+// mdc.textField.MDCTextField.attachTo(username);
+// mdc.textField.MDCTextField.attachTo(mobile);
+// mdc.textField.MDCTextField.attachTo(company);
+// mdc.textField.MDCTextField.attachTo(message);
 
 
 function clearForm() {
