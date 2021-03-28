@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 16:05:09
- * @LastEditTime: 2021-03-27 12:47:33
+ * @LastEditTime: 2021-03-28 11:13:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/src/main.js
@@ -12,7 +12,7 @@ require('./css/a8.css')
 require('./css/animate.css')
 require('./css/menu.css')
 require('./css/lrtk.css')
-// require('!style-loader!css-loader!./css/mycss.css')
+require('!style-loader!css-loader!./css/mycss.css')
 // import myCss from '!style-loader!css-loader!./css/mycss.css'
 
 
@@ -26,9 +26,9 @@ require('./js/lrtk.js')
 // images
 require('./images/fo_ad.png')
 
-let template = require('./tpl/main.ejs')
-let data = require('./conf/data.json')
-document.getElementById('myapp').innerHTML = template(data);
+// let template = require('./tpl/main.ejs')
+// let data = require('./conf/data.json')
+// document.getElementById('myapp').innerHTML = template(data);
 
 // mdc text field
 let username = document.querySelector('#username');
@@ -51,6 +51,8 @@ function clearForm() {
 }
 
 // submit signup
+console.log('main');
+
 document.querySelector('#signup-button').addEventListener('click', function (event) {
     let username_val = username.querySelector('[name=username]').value;
     let mobile_val = mobile.querySelector('[name=mobile]').value;

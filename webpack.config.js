@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 15:50:32
- * @LastEditTime: 2021-03-27 11:48:58
+ * @LastEditTime: 2021-03-28 10:44:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/webpack.config.js
@@ -41,23 +41,23 @@ module.exports = {
                     name: '[name].[ext]?[hash]'
                 }
             },
-            {
-                test: /\.ejs$/,
-                use: {
-                    loader: 'ejs-compiled-loader',
-                    options: {
-                        htmlmin: true,
-                        htmlminOptions: {
-                            removeComments: true
-                        }
-                    }
-                }
-            }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: '北京赛风法律',
+            comm: {
+                "title": "做股权激励就找胡礼新",
+                "logo": "https://pro3bc52a2b-pic4.ysjianzhan.cn/upload/921591666611.jpg",
+                "homepage": "https://www.safe-lawyer.com",
+                "company": "赛风法律",
+                "mobile": "13621132233",
+                "tel": "010-57162255",
+                "email": "1838301961@qq.com",
+                "address": "北京东城区北三环36号环球贸易中心C座",
+                "beian": "京ICP备14012745号-1",
+                "qq": "1838301961"
+            },
             template: 'src/index.html',
         })
     ],

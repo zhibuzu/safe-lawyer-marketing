@@ -184,9 +184,8 @@ img {
 	width: 30%;
 	height:65px;
 	margin-top: 13px;
-	background: url(../images/logo.jpg);
-	background-position: center;
-    background-size: cover;
+	background: url(../images/logo.jpg) center no-repeat;
+    background-size: contain;
 }
 .logo a{
 	float: left;
@@ -372,19 +371,25 @@ img {
 	background: url("../images/pro_bj.jpg") no-repeat center bottom;
 }
 .pro_mid02{
-	margin: auto;
-	overflow: hidden;
-	height: 432px;
-	margin-top: 40px;
-	padding: 50px 0 0 0;
-	/* background: url("../images/pro_bj02-removebg-preview.png") no-repeat center -49px; */
-	background: url("https://tva1.sinaimg.cn/large/008eGmZEly1goydmr2lo0j30jc0r44ds.jpg") no-repeat center -49px;
-	background-size: 40%;
-	background-color: #fff;
+	margin: 40px 0;
+    overflow: hidden;
+    height: 450px;
+    padding: 50px 0 0 0;
+    /* background: url(../images/pro_bj02-removebg-preview.png) no-repeat center -49px; */
+    background: url(https://tva1.sinaimg.cn/large/008eGmZEly1goydmr2lo0j30jc0r44ds.jpg) no-repeat center -17px;
+    background-size: contain;
+    background-color: #fff;
+    position: relative;
 }
 .pro_lil{
 	display:flex;justify-content:center;align-items:center;
 	margin: 30px 0;
+}
+
+.pro_lil_button {
+    bottom: 20px;
+    position: absolute;
+    left: calc(50% - 170px);
 }
 
 .pro_lil ul{
@@ -417,7 +422,7 @@ img {
 }
 .pro_lijg01{
 	width:246px;
-	height: 90px;
+	height: 60px;
 	float: left;
 }
 .pro_lijg02{
@@ -1231,10 +1236,11 @@ img {
 	background: url(../images/lx.jpg) center top no-repeat;
 }
 .vat_ggt{
-	
-	height: 350px;
-	/* background: url(../images/vat.jpeg) center top no-repeat; */
-	background: url(https://tva1.sinaimg.cn/large/008eGmZEly1goydgjrrl6j31hc07xdj5.jpg) center top no-repeat;
+	height: 20vw;
+    /* background: url(../images/vat.jpeg) center top no-repeat; */
+    background: url(https://tva1.sinaimg.cn/large/008eGmZEly1goydgjrrl6j31hc07xdj5.jpg) center 0px no-repeat;
+    background-size: cover;
+    /* margin-top: 40px; */
 }
 .vat_ggtjy{
 	
@@ -1774,7 +1780,7 @@ img {
 .zhuce_li ul li{
 	float: left;
 	margin: 2%;
-    width: 27%;
+    width: 28%;
 }
 .zhuce_li ul li p{
 	font-size: 18px;
@@ -1979,7 +1985,7 @@ img {
 
 .signup {
 	width: 100%;
-    background:#faf554cc;
+    background:#f5f179cc;
     padding: 10px 0 10px 0;
     margin-top: 40px;
 }
@@ -2147,7 +2153,7 @@ img {
 	overflow:hidden;
 }
 .about_miaoshu{
-	width:1200px;
+	width:100%;
 	margin: auto;
 	line-height: 24px;
 	color: #333;
