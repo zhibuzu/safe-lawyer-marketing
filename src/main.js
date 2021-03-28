@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 16:05:09
- * @LastEditTime: 2021-03-28 11:13:48
+ * @LastEditTime: 2021-03-28 11:36:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/src/main.js
@@ -35,7 +35,7 @@ let username = document.querySelector('#username');
 let mobile = document.querySelector('#mobile');
 let company = document.querySelector('#company');
 let message = document.querySelector('#message');
-let form = document.getElementById('form-fields');
+let form = document.getElementById('form');
 
 mdc.textField.MDCTextField.attachTo(username);
 mdc.textField.MDCTextField.attachTo(mobile);
@@ -44,15 +44,10 @@ mdc.textField.MDCTextField.attachTo(message);
 
 
 function clearForm() {
-    username.value = '';
-    mobile.value = '';
-    company.value = '';
-    message.value = '';
+    form.reset();
 }
 
 // submit signup
-console.log('main');
-
 document.querySelector('#signup-button').addEventListener('click', function (event) {
     let username_val = username.querySelector('[name=username]').value;
     let mobile_val = mobile.querySelector('[name=mobile]').value;
@@ -77,7 +72,7 @@ document.querySelector('#signup-button').addEventListener('click', function (eve
         data: { username_val, mobile_val, company_val, message_val, start_at_val }
     })
         .success(function ({ code, msg }) {
-            console.log(code, msg);
+            // console.log(code, msg);
             clearForm();
             if (code === 10000) {
                 alert(msg);
