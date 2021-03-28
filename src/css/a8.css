@@ -1053,12 +1053,12 @@ img {
 	border-bottom: solid 1px #20344c; 
 }
 .foot_top01{
-	width:840px;
+	width:auto;
 	float: left;
 	padding-bottom: 50px;
 }
 .foot_top01 >ul>li{
-	margin: 0 110px 0 0;
+	margin: 0 90px 0 0;
 	float: left;
 }
 .foot_top01 >ul>li>a{
@@ -1984,7 +1984,7 @@ img {
 
 .signup {
 	width: 100%;
-    background:#f5f179cc;
+    background:#efeb89;
     padding: 10px 0 10px 0;
     margin-top: 20px;
 }

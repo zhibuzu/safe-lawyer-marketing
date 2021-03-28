@@ -1,4 +1,5 @@
 dependencies:
+  '@splidejs/splide': 2.4.21
   art-template: 4.13.2
   i: 0.3.6
   npm: 7.6.3
@@ -1044,6 +1045,11 @@ packages:
     resolution:
       integrity: sha1-jwOiKgTeQ3JU6M6MyEujlokoh1I=
       tarball: '@discoveryjs/json-ext/download/@discoveryjs/json-ext-0.5.2.tgz'
+  /@splidejs/splide/2.4.21:
+    dev: false
+    resolution:
+      integrity: sha1-rRlU2NiCLJv+oNPcahGTWLiFga0=
+      tarball: '@splidejs/splide/download/@splidejs/splide-2.4.21.tgz'
   /@types/eslint-scope/3.7.0:
     dependencies:
       '@types/eslint': 7.2.6
@@ -3322,6 +3328,7 @@ packages:
 specifiers:
   '@babel/core': ^7.13.8
   '@babel/preset-env': ^7.13.9
+  '@splidejs/splide': ^2.4.21
   art-template: ^4.13.2
   art-template-loader: ^1.4.3
   babel-loader: ^8.2.2

@@ -1,13 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 18:16:04
- * @LastEditTime: 2021-03-27 12:59:21
+ * @LastEditTime: 2021-03-28 19:03:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/src/js/lrtk.js
  */
 $(function () {
-	var tophtml = "<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"http://wpa.qq.com/msgrd?v=3&amp;uin=1838301961&amp;site=qq&amp;menu=yes\" class=\"btn btn-qq\" target=\"_blank\"></a><div class=\"btn btn-wx\"><img class=\"pic\" src=\"https://tva1.sinaimg.cn/large/008eGmZEly1goydgpqqdpj30by0by752.jpg\" onclick=\"window.location.href=\'http://www.safe-lawyer.com\'\"/></div><div class=\"btn btn-phone\"><div class=\"phone\">010-57162255</div></div><div class=\"btn btn-top\"></div></div>";
+	var tophtml = "<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"http://wpa.qq.com/msgrd?v=3&amp;uin=1838301961&amp;site=qq&amp;menu=yes\" class=\"btn btn-qq\" target=\"_blank\"></a><div class=\"btn btn-wx\"><img class=\"pic\" src=\"https://tva1.sinaimg.cn/large/008eGmZEly1goydgpqqdpj30by0by752.jpg\" onclick=\"window.location.href=\'http://www.safe-lawyer.com\'\"/></div><div class=\"btn btn-phone\"><div class=\"phone\"><a href=\"tel:15801479466\" style=\"color: #fff;\">15801479466</a></div></div><div class=\"btn btn-top\"></div></div>";
 	$("#top").html(tophtml);
 	$("#izl_rmenu").each(function () {
 		$(this).find(".btn-wx").mouseenter(function () {

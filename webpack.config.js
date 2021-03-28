@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 15:50:32
- * @LastEditTime: 2021-03-28 10:44:35
+ * @LastEditTime: 2021-03-28 19:01:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/webpack.config.js
@@ -51,7 +51,7 @@ module.exports = {
                 "logo": "https://pro3bc52a2b-pic4.ysjianzhan.cn/upload/921591666611.jpg",
                 "homepage": "https://www.safe-lawyer.com",
                 "company": "赛风法律",
-                "mobile": "13621132233",
+                "mobile": "15801479466",
                 "tel": "010-57162255",
                 "email": "1838301961@qq.com",
                 "address": "北京东城区北三环36号环球贸易中心C座",

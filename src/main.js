@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 16:05:09
- * @LastEditTime: 2021-03-28 11:36:34
+ * @LastEditTime: 2021-03-28 19:57:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/src/main.js
@@ -17,7 +17,7 @@ require('!style-loader!css-loader!./css/mycss.css')
 
 
 require('./js/jquery-1.8.3.min.js')
-require('./js/menufixed.js')
+// require('./js/menufixed.js')
 require('./js/lrtk.js')
 // require('./js/wow.min.js')
 // <!--飞入特效-->
@@ -25,6 +25,10 @@ require('./js/lrtk.js')
 
 // images
 require('./images/fo_ad.png')
+
+// You should import the CSS file.
+require('!style-loader!css-loader!@splidejs/splide/dist/css/splide.min.css');
+import Splide from '@splidejs/splide';
 
 // let template = require('./tpl/main.ejs')
 // let data = require('./conf/data.json')
@@ -46,6 +50,9 @@ mdc.textField.MDCTextField.attachTo(message);
 function clearForm() {
     form.reset();
 }
+
+// View a list of images.
+new Splide('#images').mount();
 
 // submit signup
 document.querySelector('#signup-button').addEventListener('click', function (event) {

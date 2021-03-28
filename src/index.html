@@ -292,8 +292,26 @@
             </div>
             <div class="about_miaoshubj">
                 <div class="about_miaoshu">
-                    <img class="lawyer-img" alt=""
-                        src="https://tva1.sinaimg.cn/large/008eGmZEly1goydo2j84nj31900u07th.jpg">　　<br>
+                    <div class="lawyer-img">
+                        <div class="splide" id="images">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img class="" alt=""
+                                            src="https://tva1.sinaimg.cn/large/008eGmZEly1goydo2j84nj31900u07th.jpg">　
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="https://tva1.sinaimg.cn/large/008eGmZEly1gozvcn4p5bj30le0e9q5q.jpg"
+                                            alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="https://tva1.sinaimg.cn/large/008eGmZEly1gozvdokedwj30l409oq4p.jpg"
+                                            alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <div class="lawyer-info">
                         <p>胡礼新，志霖律所高级合伙人，擅长股权激励、股权架构设计、股权融资等公司股权相关业务，被称为“股权守护者”。</p>
                         <p>曾受北京律师协会、北京律师学院邀请向律师同行做股权激励实务主题演讲，在清华校内为企业总裁做股权激励实务主题培训。央视云访谈《崛起中国》节目唯一连线律师。</p>
@@ -453,53 +471,45 @@
                 <div class="foot_top">
                     <div class="foot_top01">
                         <ul>
-                            <li><a href="/pro/">股权激励</a>
+                            <li><a
+                                    href="https://www.safe-lawyer.com/page-gongsifa?product_category=27&menu_id=24//">股权激励</a>
                                 <span class="foot_xian"></span>
                                 <div class="subs">
                                     <ul>
 
-                                        <li><a href="/fangan/">股权激励</a></li>
-
-                                        <li><a href="/moshi/">企业咨询</a></li>
-
-                                        <li><a href="/jixiaoguanli/">薪酬体系</a></li>
-
-                                        <li><a href="/qiyezixun/">人力资源规划</a></li>
-
+                                        <li><a
+                                                href="https://www.safe-lawyer.com/page-gongsifa?product_category=27&menu_id=24/">股权激励</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
 
-                            <li><a href="/gsus/">关于<%= htmlWebpackPlugin.options.comm.company %></a>
+                            <li><a href="https://www.safe-lawyer.com/page-shaifen">关于<%=
+                                        htmlWebpackPlugin.options.comm.company %></a>
                                 <span class="foot_xian"></span>
                                 <div class="subs">
                                     <ul>
 
-                                        <li><a href="/gsjj/">公司简介</a></li>
-
-                                        <li><a href="/gswj/">企业文化</a></li>
-
-                                        <li><a href="/huajing/">公司环境</a></li>
-
-                                        <li><a href="/team/">
+                                        <li><a href="https://www.safe-lawyer.com/page-shaifen">公司简介</a></li>
+                                        <li><a href="https://www.safe-lawyer.com/page-zhuanye?article_category=5&brd=1">
                                                 <%= htmlWebpackPlugin.options.comm.company %>团队
                                             </a></li>
 
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="/news/">最新资讯</a>
+                            <li><a href="https://www.safe-lawyer.com/page-xinwen">最新资讯</a>
                                 <span class="foot_xian"></span>
                                 <div class="subs">
                                     <ul>
 
-                                        <li><a href="/sbiaonew/">行业新闻</a></li>
+                                        <li><a
+                                                href="https://www.safe-lawyer.com/page-xinwen?article_category=2&brd=1">行业新闻</a>
+                                        </li>
 
-                                        <li><a href="/hydt/">
+                                        <li><a href="https://www.safe-lawyer.com/page-xinwen?article_category=1&brd=1">
                                                 <%= htmlWebpackPlugin.options.comm.company %>动态
                                             </a></li>
-
-                                        <li><a href="/qna/">常见问题</a></li>
 
                                     </ul>
                                 </div>
@@ -508,16 +518,16 @@
                                 <span class="foot_xian"></span>
                                 <div class="wx_sm"></div>
                             </li>
+                            <li>
+                                <div class="fo_dh">咨询热线（工作日9:30-18:30）<br><span>
+                                        <%= htmlWebpackPlugin.options.comm.tel %>
+                                    </span></div>
+                                <p class="fo_lx fo_yx">服务邮箱 : <%= htmlWebpackPlugin.options.comm.email %>
+                                </p>
+                                <p class="fo_lx fo_ad">总部地址 : <%= htmlWebpackPlugin.options.comm.address %>
+                                </p>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="foot_top2">
-                        <div class="fo_dh">咨询热线（工作日9:30-18:30）<br><span>
-                                <%= htmlWebpackPlugin.options.comm.tel %>
-                            </span></div>
-                        <p class="fo_lx fo_yx">服务邮箱 : <%= htmlWebpackPlugin.options.comm.email %>
-                        </p>
-                        <p class="fo_lx fo_ad">总部地址 : <%= htmlWebpackPlugin.options.comm.address %>
-                        </p>
                     </div>
                 </div>
                 <div class="foot_bot">版权所有 Copyright(C)2009-2015北京<%= htmlWebpackPlugin.options.comm.company %>有限公司 <a
