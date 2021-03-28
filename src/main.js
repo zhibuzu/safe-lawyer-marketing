@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 16:05:09
- * @LastEditTime: 2021-03-28 19:57:46
+ * @LastEditTime: 2021-03-28 20:56:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /safe-lawyer/loading-page/src/main.js
@@ -52,7 +52,14 @@ function clearForm() {
 }
 
 // View a list of images.
-new Splide('#images').mount();
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#images', {
+        type: 'loop',
+        perPage: 1,
+        autoplay: true,
+        pauseOnHover: true,
+    }).mount();
+});
 
 // submit signup
 document.querySelector('#signup-button').addEventListener('click', function (event) {

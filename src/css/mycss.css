@@ -17,7 +17,7 @@
 
 .lawyer-info p {
     line-height: 35px;
-    padding: 0 0 15px;
+    padding: 0 100px 15px 0;
 }
 
 @media (min-width: 450px) {
@@ -33,11 +33,6 @@
         float: right;
         width: 55%;
     }
-
-    .lawyer-info p {
-        line-height: 40px;
-        padding: 0 0 15px;
-    }
 }
 
 @media (max-width: 450px) {
@@ -51,9 +46,5 @@
         font-size: 17px;
         padding: 10px;
         width: auto;
-    }
-    .lawyer-info p {
-        line-height: 40px;
-        padding: 0 0 15px;
     }
 }
