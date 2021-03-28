@@ -177,14 +177,13 @@ img {
 	width:100%;
 	margin: auto;
 	z-index: 99999999;
-	background: #f4f4f4;
+	background: #e6e6e6fa;
 }
 .logo{
 	float: left;
 	width: 30%;
-	height:65px;
-	margin-top: 13px;
-	background: url(../images/logo.jpg) center no-repeat;
+	height:100%;
+	background: url(../images/logo-removebg-preview-wow.png) center no-repeat;
     background-size: contain;
 }
 .logo a{
@@ -1987,7 +1986,7 @@ img {
 	width: 100%;
     background:#f5f179cc;
     padding: 10px 0 10px 0;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 /*��Ʒ����ҳ*/
