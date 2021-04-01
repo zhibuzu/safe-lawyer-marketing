@@ -234,7 +234,7 @@ img {
 	margin: auto;
 	overflow: hidden;
 	text-align: center;
-	margin-top: 45px;
+	padding-top: 45px;
 }
 .hot_h1{
 	font-size:36px;
@@ -1756,9 +1756,12 @@ img {
 	margin-bottom: 20px;
 }
 .zhuce_li{
-	width:100%;
-	margin: auto;
-	overflow: hidden;
+	width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin: auto;
+    overflow: hidden;
+    background: powderblue;
 }
 .pro_num02{
 	width:70px;
@@ -1984,7 +1987,7 @@ img {
 
 .signup {
 	width: 100%;
-    background:#efeb89;
+    background:aquamarine;
     padding: 10px 0 10px 0;
     margin-top: 20px;
 }
