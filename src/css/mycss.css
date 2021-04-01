@@ -56,4 +56,7 @@
         padding: 10px;
         width: auto;
     }
+    .lawyer-info p {
+        padding: 0 100px 0 0;
+    }
 }
